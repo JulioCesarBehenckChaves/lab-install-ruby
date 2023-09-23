@@ -50,6 +50,42 @@ We may find a lot od stable ruby version by typing "rbenv install -l". Rails req
 rbenv install 3.0.2 -v
 ```
 
+At the end you may see teh following message:
+
+Installed ruby-3.0.2 to /home/dbadmin/.rbenv/versions/3.0.2
+
+
+Set global Ruby version.
+
+$ rbenv global 3.0.2
+Confirm installation with similar output.
+
+$ ruby -v
+
+ruby 3.0.2pxxx
+Install Bundler using gem.
+
+$ gem install bundler
+
+
+
+Creating a Test Application
+Create a new Rails project.
+
+$ cd ~
+
+$ rails new hello-world
+
+$ cd hello-world
+Start Rails server.
+
+$ rails server --binding=0.0.0.0
+Navigate to your server's IP address at port 3000 in a web browser. For example:
+
+$ http://192.0.2.123:3000
+
+
+
 
 sudo apt-get install build-essential git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev -y
 sudo apt-get install libssl-dev zlib1g-dev sqlite3 libsqlite3-dev -y
