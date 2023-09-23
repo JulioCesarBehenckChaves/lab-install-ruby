@@ -14,6 +14,39 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install nodejs -y
 ```
 
+Validate the install:
+
+```bash
+node -v
+```
+
+### yarn
+
+```bash
+curl -fsSL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn -y
+```
+
+Validate the install
+
+```bash
+yarn -v
+```
+
+### Rbenv - var environment
+
+```bash
+sudo apt install rbenv -y
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
+```
+
+### Finally Ruby
+
+```bash
+rbenv install 2.7.0-rc2 -v
+```
 
 
 sudo apt-get install build-essential git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev -y
