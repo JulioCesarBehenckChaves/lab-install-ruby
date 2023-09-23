@@ -44,8 +44,10 @@ echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
 
 ### Finally Ruby
 
+We may find a lot od stable ruby version by typing "rbenv install -l". Rails requires Ruby 2.5.0 or greater.
+
 ```bash
-rbenv install 2.7.0-rc2 -v
+rbenv install 3.0.2 -v
 ```
 
 
